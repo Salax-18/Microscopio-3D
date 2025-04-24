@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microscopio 3D</title>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Microscopio 3D</h1>
+    </header>
+
+    <!--uso de model-viewer -->
+    <section id="modelo-3d">
+      <model-viewer
+        src="models/microscopio.glb"
+        alt="Microscopio de laboratorio"
+        ar
+        camera-controls
+        auto-rotate
+        style="width: 100%; height: 500px; background-color: #ebd9bc"
+      >
+      </model-viewer>
+    </section>
+
+    <!-- Video de uso del microscopio -->
+    <section id="uso-correcto">
+      <h2>Uso Correcto del Microscopio</h2>
+      <video controls width="100%">
+        <source src="videos\MicroscopioVideo-VEED.mp4" type="video/mp4" />
+        <track
+          src="subtitulos/microscopio-uso.vtt"
+          kind="subtitles"
+          srclang="es"
+          label="Español"
+          default
+        />
+      </video>
+    </section>
+
+    <!-- Características  -->
+    <section id="caracteristicas">
+      <h2>Partes del microscopio y sus características</h2>
+      <img
+        src="imagenes\Partes del microscopio.png"
+        alt="Gráfico de características"
+        style="max-width: 100%"
+      />
+      <ul>
+        <li>
+          <strong>Cabezal:</strong> Parte superior del microscopio en donde se
+          enceuntra ubicado los Oculares.
+        </li>
+        <li>
+          <strong>Base:</strong> Es la parte inferior del microscopio la cual
+          sirve como soporte para los otros elementos de este.
+        </li>
+        <li>
+          <strong>Brazo:</strong> Conecta la base con el revólver dónde están
+          los objetos.
+        </li>
+        <li>
+          <strong>Oculares:</strong> Estos cuentan con dos barras laterales a
+          los lados las cuales nos ayudan ajustar la distancia de los oculares.
+          Generalmente aumenta entre 10x y 15x.
+        </li>
+        <li>
+          <strong>Revólver:</strong> Es la pieza giratoria que sostiene los
+          objetivos y permite cambiar de uno a otro.
+        </li>
+        <li>
+          <strong>Objetivos:</strong> Son los lentes que están cerca de la
+          muestra. Vienen en diferentes aumentos, como 4x, 10x o 40x.
+        </li>
+        <li>
+          <strong>Pinzas:</strong> Estas ayudan a sujetar la muestra para que no
+          se mueva.
+        </li>
+        <li>
+          <strong>Platina:</strong> Es la superficie donde se coloca la muestra
+          o el portaobjetos.
+        </li>
+        <li>
+          <strong>Diafragma:</strong> Se encarga de controlar la cantidad de luz
+          que pasa a través de la muestra.
+        </li>
+        <li>
+          <strong>Fuente de luz:</strong> Es la encargada de iluminar la
+          muestra.
+        </li>
+        <li>
+          <strong>Tornillo micrométrico:</strong> Permite hacer ajustes más
+          finos del enfoque.
+        </li>
+        <li>
+          <strong>Tornillo macrométrico:</strong> Permite hacer un enfoque
+          grueso, moviendo la platina de manera rápida hacia arriba o hacia
+          abajo.
+        </li>
+        <li>
+          <strong>Control de desplazamiento:</strong> Este permite mover la
+          platina para buscar la parte de la muestra que queremos observar, sin
+          mover el portaobjetos directamente.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Código QR para escanear y ver la experiencia en RV -->
+    <section id="ver-en-rv">
+      <h2>CÓDIGO QR</h2>
+      <p>
+        Escanea el siguiente código QR desde tu celular para entrar a la
+        experiencia inmersiva.
+      </p>
+      <img
+        src="imagenes\QR.Microscopio.jpeg"
+        alt="Código QR para RV"
+        style="max-width: 200px; display: block; margin: 0 auto"
+      />
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Microscopio en 3D</p>
+    </footer>
+  </body>
+</html>
